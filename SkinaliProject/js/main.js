@@ -53,6 +53,17 @@ $(function() {
 		
 	});
 
+	//Показывать карту при прокрутке к ней,а не сразу при загрузке страницы
+	let discount = $('.discount');
+	let discountTop = discount.offset().top;
+	$(window).bind('scroll', function() {
+		let windowTop = $(this).scrollTop();
+		if (windowTop > discountTop) {
+			$('.contacts__map').html('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2263.1567917598068!2d37.764250116128316!3d55.44249798047146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aa43ab93c7d4d%3A0x8b6f259e9c72dd05!2z0JrQsNGI0LjRgNGB0LrQvtC1INGILiwgMjMsINCU0L7QvNC-0LTQtdC00L7QstC-LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCAxNDIwMDE!5e0!3m2!1sru!2sru!4v1604968059281!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;"allowfullscreen=""aria-hidden="false"tabindex="0"></iframe>')
+			$(window).unbind('scroll');
+		}
+	});
+
 });
 
 $(window).on('load', (function() {
