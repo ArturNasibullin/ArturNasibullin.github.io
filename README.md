@@ -10,4 +10,4 @@
 
 [Простой сайт-визитка Luis Project](ArturNasibullin.github.io/LuisProject/ "Простой сайт-визитка Luis Project")
 
-[Адаптивный кроссбраузерный сайт Фабрики Скинали №1](ArturNasibullin.github.io/SkinaliProject/ "Адаптивный кроссбраузерный сайт Фабрики Скинали №1")
+[Адаптивный кроссбраузерный сайт Фабрики Скинали №1](https://github.com/ArturNasibullin/ArturNasibullin.github.io/tree/main/SkinaliProject "Адаптивный кроссбраузерный сайт Фабрики Скинали №1")
