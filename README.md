@@ -11,6 +11,8 @@
 [Простой сайт-визитка Luis Project](ArturNasibullin.github.io/LuisProject/ "Простой сайт-визитка Luis Project")
 
 [Адаптивный кроссбраузерный сайт Фабрики Скинали №1](ArturNasibullin.github.io/SkinaliProject)
+
+
 В данном проекте были использованны: 
 1) методология БЭМ,
 2) адаптация под различные экраны (мобильная версия),
