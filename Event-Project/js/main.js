@@ -246,18 +246,18 @@ window.addEventListener('DOMContentLoaded', () => {
 		function calcTotal (inputDays, inputHumans, inputHours, selectValue) {
 			let result = document.querySelector('.form__precoast-big');
 			
-			if (selectValue === 'Prom') {
+			if (selectValue === 1) {
 				result.textContent = Math.round(inputDays * inputHumans * (1000 * inputHours));
 				calcTotal();
-			} else if (selectValue == 'Consult') {
+			} else if (selectValue == 2) {
 				result.textContent = Math.round(inputDays * inputHumans * (1100 * inputHours));
 				calcTotal();
-			} else if (selectValue == 'Stand') {
+			} else if (selectValue == 3) {
 				result.textContent = Math.round(inputDays * inputHumans * (1200 * inputHours));
 				calcTotal();
-			} else if (selectValue == 'Model') {
+			} else if (selectValue == 4) {
 				result.textContent = Math.round(inputDays * inputHumans * (1300 * inputHours));
-			} else if (selectValue == 'Hostes') {
+			} else if (selectValue == 5) {
 				result.textContent = Math.round(inputDays * inputHumans * (1400 * inputHours));
 			}
 		}	
@@ -421,5 +421,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 });
-
-
