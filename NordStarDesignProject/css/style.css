@@ -1,0 +1,1135 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: inline-block;
+}
+/* comfortaa-500 - latin_cyrillic */
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/comfortaa-v29-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/comfortaa-v29-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* comfortaa-regular - latin_cyrillic */
+  @font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/comfortaa-v29-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/comfortaa-v29-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* comfortaa-600 - latin_cyrillic */
+  @font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/comfortaa-v29-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/comfortaa-v29-latin_cyrillic-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* exo-2-regular - latin_cyrillic-ext */
+@font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/exo-2-v9-latin_cyrillic-ext-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/exo-2-v9-latin_cyrillic-ext-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* exo-2-500 - latin_cyrillic-ext */
+  @font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/exo-2-v9-latin_cyrillic-ext-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/exo-2-v9-latin_cyrillic-ext-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* exo-2-600 - latin_cyrillic-ext */
+  @font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/exo-2-v9-latin_cyrillic-ext-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/exo-2-v9-latin_cyrillic-ext-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+h2, h3{
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+}
+p{
+    font-family: 'Exo 2', sans-serif;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* Header */
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+
+}
+.header.fixed{
+    position: fixed;
+    background: #25b6c2;   
+    height: 60px; 
+}
+
+.header__inner{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 70px;
+}
+.header__logo {
+    width: 43%;
+}
+.header__logo a{
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    color: rgb(255, 255, 255);
+}
+
+/* Header Menu 
+*******************************************/
+.header_menu ul{
+    display: inline-block;
+}
+.header_menu > ul > li > a{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Comfortaa', cursive;
+    margin-right: 25px;
+    color: rgb(255, 255, 255);
+    height: 70px;
+    padding-top: 25px;
+}
+
+.header_menu > ul > li > a:hover{
+    color: #ddd;
+}
+
+
+/* Main Page
+*********************************** */
+.main__page{
+    background: #25b6c2 url(../img/bg1.jpg);
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height:100vh;
+    width: 100%;
+}
+.main__page__inner{
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+.main__page__image img{
+    margin: 175px 0 0 50px;
+    width: 80%;
+    height: auto;
+}
+.main__page__text{
+    width: 60%;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    margin: 170px 20px 50px 0;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-left: 35px;
+}
+.main__page__text p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.main__page__text p::before{
+    content: '\f00c';
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    /* left: 820px; */
+    margin-top: -2px;
+    margin-right: 20px;
+    transition: all 0.9s ease;
+    opacity: 0;
+    transform: translateX(8px);
+}
+.main__page__text p:hover::before{
+    transition: all 0.9s ease;
+    opacity: 1;
+    /* left: 840px; */
+}
+
+.order__btn{
+    display: inline-block;
+    /* text-transform: uppercase; */
+    font-size: 22px;
+    background-color: rgb(255, 255, 255);
+    margin: 40px 0 0 40px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 20px 80px 20px 25px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    position:absolute;
+}
+.order__btn a{
+    text-decoration: none;
+    color: #25b6c2;
+}
+.order__btn a::after{
+    content: '\f101';
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 220px;
+    bottom:19px;
+    display:inline-block;
+    transition: all 1s ease;
+}
+.order__btn a:hover::after{
+    left: 240px;
+}
+
+
+/* Features 
+*************************************/
+.features{
+    width: 100%;
+}
+.features__inner{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 50px 0 80px;
+}
+.features__item{
+    text-align: center;
+    width: 33.33333%;
+    padding: 0 25px;
+}
+.features__icon{
+    display: inline-block;
+    margin: 0;
+}
+.icon{
+    fill: #39cbe4;  
+    width: 90px;
+    height: 100%;
+}
+.features__text{
+    color: #535353;
+}
+
+
+/* Process 
+*********************************** */
+
+.process__inner{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    border-bottom: 2px solid rgba(211, 195, 195, 0.4)
+}
+.process__title{
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    text-align: center;
+}
+.process_corusele{
+    width: 50%;
+}
+.process_corusele img {
+    width: 100%;
+    height: auto;
+}
+.process_description {
+    display: block;
+    width: 50%;
+}
+.process__items{
+    margin: 0px 0 25px 60px;
+    position: relative;
+}
+.precess__items__header{
+    color:#000000;
+}
+.number_1{
+    width: 35px;
+    height: auto;
+    position: absolute;
+    left:-46px;
+    top: -56px
+}
+.number_2{
+    width: 35px;
+    height: auto;
+    position: absolute;
+    left:-46px;
+    top: -56px
+}
+.number_3{
+    width: 35px;
+    height: auto;
+    position: absolute;
+    left:-46px;
+    top: -56px
+}
+.process__items__text{
+    color: #535353;
+}
+.process__inner .slick-dots{
+    position: absolute;
+    bottom: -40px;
+    right: 150px;
+    z-index: 20;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+/* Benefits 
+*********************************** */
+.benefits{
+    margin-top: 60px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7)
+}
+.benefits__title{
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    text-align: center;
+}
+.benefits__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0 0 50px;
+    margin-top: 40px;   
+}
+.benefits__item{
+    width: 33.33333%;
+    padding: 0 25px 25px 0;
+    text-align: center;
+}
+
+.benefits__item__icon img{
+    width: 45px;
+    margin-bottom: 5px;
+}
+.benefits__item__text{
+    margin-top: 5px;
+    color: #535353;
+}
+
+/* Galery 
+*********************************** */
+.galery {
+    margin-top: 60px;
+    position: relative;
+}
+.galery__title{
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    text-align: center;
+}
+.galery__item{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.galery__foto{
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.galery__foto img{
+    position: absolute;
+    top:0 ;
+    right:170px;
+    z-index: 12;
+
+}
+.galery__slider{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+}
+.slick-dots{
+    position: absolute;
+    bottom: -55px;
+    right: 390px;
+    z-index: 20;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.slick-dots button {
+    width: 15px;
+    height: 15px;
+
+    opacity: .3;
+    background: #25b6c2;
+    border-radius: 50%;
+
+    margin: 5px;
+    border: 0;
+    padding: 0;
+    font-size: 0;
+    color: transparent;
+}
+.slick-dots .slick-active button{
+    opacity: 1 ;
+}
+.slick-dots button:focus{
+    outline: 0;
+}
+.arrows{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1040px;
+    width: 100%;
+    z-index: 9999;
+}
+.arrow__next{
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    width: 80px;
+    fill: #25b6c2;
+}
+.arrow__prev{
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    width: 80px;
+    fill: #25b6c2;
+}
+
+
+
+
+
+
+
+
+/* Testimonials 
+*********************************** */
+.testimonials{
+    background-image: url(../img/bg11.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 130px;
+}
+.testimonials__title {
+    text-align: center;
+    margin: 70px 0 50px;
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;    
+}
+.testimonials__inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    
+}
+.testimonials__item{
+    width: 30.33333%;
+    margin: 7px 7px;
+    padding: 0 20px 0;
+    text-align: center;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.1);
+    border-radius: 6px;
+}
+.testimonials__foto img{
+    display: inline-block;
+    border-radius: 8px;
+    width: 30%;
+    margin-top: -50px;
+}
+.testimonials__text {
+    line-height: 1.8;
+}
+.testimonials__subtext{
+    font-weight: 600;
+}
+
+
+
+/* Price 
+*********************************** */
+.price{
+    margin-top: 70px;
+}
+
+.price__title{
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+.price__inner{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #e2ebf1;
+    border-bottom: 1px solid #e2ebf1;
+    padding: 35px 10px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    position: relative;
+    z-index: 0;
+
+}
+.price__item{
+    padding: 10px 0;
+    width: 25%;
+}
+.price__item:hover{
+    box-shadow: 0 0 15px rgba(32,237,215,.3);
+    border-radius: 6px;
+    margin-top: -10px;
+    border-top: 5px solid #0bd7fc;
+    transition: all 0.3s ease;
+    min-height: auto;
+    z-index: 1;
+}
+.price__item__title{
+    text-align: center;
+    min-height: 40px;
+    width: 100%;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:#25b6c2;
+}
+.price__item__value{
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 10px 0;
+    color: #5f5f5f;
+}
+.price__item__time{
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 10px 0;
+    color: #5f5f5f;
+}
+.price__item ul{
+    font-family: 'Comfortaa';
+ 
+}
+.price__item ul li{
+    margin: 8px;
+}
+.price__item ul li::before{
+    content: '\2713';
+    display: inline-block;
+    color:#25b6c2;
+    font-size: 12px;
+    margin-right: 6px;
+    font-weight: 900;
+    position: relative;
+    top: -2px;
+}
+.price__item a{
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    left: 30%;
+    
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+
+    border: 1px solid #25b6c2;
+    border-radius: 8px;
+
+    padding: 12px;
+    margin-top: 30px;
+    color: #5f5f5f;
+}
+.price__item a:hover{
+    background-color: #25b6c2;
+    color: #fff;
+    transition: background-color 0.4s linear;
+}
+
+
+/* Footer 
+*********************************** */
+.footer{
+    background-image: url(../img/bg.jpg);
+    border-image-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-shadow: -3px 1px 13px rgba(32,237,215, 0.3);
+    margin-top: 50px;
+    height: auto;
+}
+.footer__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__insta{
+    width: 250px;
+    text-align: center;
+}
+.footer__insta__title{
+    margin: 15px 0;
+}
+.footer__insta ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer__insta ul li{
+    margin: 5px;
+}
+.footer__insta ul li:hover{
+    display: inline-block;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5); 
+
+}
+.footer__insta ul li a img{
+    display: inline-block;
+    border-radius: 6px;
+}
+.footer__info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer__info h2{
+    margin: 10px 0;
+}
+.footer__info a{
+    font-size: 25px;
+    font-family: 'exo 2', serif;
+    margin: 10px 0 ;
+    color:#fff;
+
+}
+.footer__info__tel a::before{
+    content: "\f879";
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 21px;
+    margin-right: 10px;
+}
+.footer__info__mail a::before{
+    content: "\f0e0";
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 21px;
+    margin-right: 10px;
+}
+
+.burger{
+    display: none;
+    background: none;
+    border:0;
+    padding: 10px 2px;
+}
+.burger__item{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+}
+.burger__item:before, .burger__item:after{
+    content: "";
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+.burger__item:before{
+    top: -8px;
+}
+.burger__item:after{
+    bottom: -8px;
+}
+
+
+
+
+
+/* Media ********** */
+
+/* Large desktops and laptops */
+@media (max-width: 1200px) {
+    .header_menu > ul > li > a {
+        margin-right: 10px;
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (max-width: 1199px) {
+    .main__page{
+        min-height: 100vh;
+    }
+    .header__logo a {
+        margin-left: 0px;
+    }
+    .main__page__image img {
+        width: 90%;
+        margin: 175px 0 0 10px;
+    }
+    .main__page__text {
+        margin-top: 120px;
+        width: 100%;
+    }
+    .order__btn{
+        padding: 15px 60px 15px 20px;
+        margin-top: 60px;
+        font-size: 18px;
+    }
+    .order__btn a::after{
+        left: 185px;
+        bottom: 15px;
+    }
+
+    /* Process */
+    .process__inner .slick-dots{
+        bottom: 40px;
+    }
+
+    /* Galery */
+    .arrows{
+        display: none;
+    }
+    .galery__foto img{
+        right: 120px;
+    }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+/* Header */
+    .main__page{
+        min-height: 60vh;
+    }
+    .header__logo {
+        width: 30%;
+    }
+    .header_menu > ul li{
+        display: block;
+        text-align: right;
+    }
+    .header_menu > ul > li > a {
+        padding-top: 14px;
+        height: 40px;
+        margin-right: 40px;
+    }
+
+
+/* Main page */
+    .main__page__inner {
+        justify-content: center;
+    }
+    .main__page__image img {
+        width: 90%;
+        margin: 175px 0 0 10px;
+    }
+    .main__page__text {
+        margin-top: 120px;
+        width: 100%;
+    }
+    .main__page__text h1{
+        font-size: 24px;
+    }
+    .main__page__text p{
+        font-size: 14px;
+    }
+    /* Features */
+    .features__inner {
+        margin-top: 0;
+    }
+    .features__icon{
+        margin: -20px;
+    }
+    .icon{  
+        width: 70px;
+    }
+    .features__title{
+        font-size: 16px;
+    }
+    .features__text p{
+        font-size: 14px;
+    }
+
+
+    /* Process */
+    .process__title h2 {
+        font-size: 28px;
+    }
+    .process__inner{
+        padding: 20px;
+    }
+    .precess__items__header h2{
+        font-size: 18px;
+    }
+    .process__items__text p{
+        font-size: 14px;
+    }
+    .process__inner .slick-dots{
+        top: 360px;
+        right: 110px;
+    }
+
+    /* Benefits */
+    .benefits__title h2{
+        font-size: 28px;
+    }
+    .benefits__wrapper{
+        padding: 0 20px;
+    }
+    .benefits__item__title h3{
+        font-size: 20px;
+    }
+
+
+   /* Galery */
+   .galery {
+    margin-top: 20px;   
+   }
+   .galery__title h2{
+    font-size: 28px;
+   }
+   .galery__foto{
+    height: 420px;
+   }
+   .galery__foto img {
+       right: 50px;
+       width: 90%;
+   }
+   .slick-dots {
+       width: 40%;
+       bottom: -40px;
+       right: 220px;
+   }
+   .slick-dots button {
+    width: 10px;
+    height: 10px;
+   }
+
+   /* Testimonials */
+   .testimonials__title h2{
+    font-size: 28px;
+   }
+   .testimonials__text p{
+    font-size: 14px;
+    line-height: 1.3;
+   }
+
+   /* Price */
+   .price {
+    margin-top: 45px;
+   }
+   .price__title h2{
+       font-size: 28px;
+   }
+   .price__title{
+       margin: 0 0 10px 0;
+   }
+   .price__inner{
+       border-top:0;
+   }
+   .price__item{
+       padding: 0;
+   }
+   .price__item__title {
+    min-height: 34px;
+    width: 100%;
+    font-size: 14px;
+   }
+   .price__item__value {
+       font-size: 30px;
+   }
+   .price__item__time {
+       font-size: 10px;
+   }
+   .price__item ul{
+       font-size: 14px;
+   }
+
+}
+
+/* Landscape phones and portrait tablets */
+/* @media  (max-width: 600px) {
+    .main__page{
+        min-height: 100vh;
+    }
+    .header_menu{
+        display: none;
+    }
+    .header__logo {
+        width: 100%
+    }
+    .main__page__image{
+        display: none;
+    }
+    .main__page__text {
+        margin-top: 100px;
+    }
+    .main__page__text h1{
+        margin-left: 25px;
+    }
+    .main__page__text p{
+        font-size: 10px;
+    }
+    .order__btn{
+        margin-top: 10px;
+    }
+    .price__item__value{
+        font-size: 28px;
+    }
+} */
+@media (max-width: 769px) {
+    .header_menu{
+        /* display: none; */
+        text-align: right;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 45%;
+        position: absolute;
+        top: 80%;
+        right: 0;
+        background-color: #25b6c2;
+        border-radius: 15px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .5s;
+        
+    }
+    .header_menu.show{
+        /* display: block; */
+        max-height: 210px;
+    }
+    .burger{
+        display: block;
+    }
+    .header__logo {
+        width: 90%;
+    }
+    .main__page__image img {
+        width: 80%;
+        margin: 175px 0 0 10px;
+    }
+    .main__page__text {
+        margin-top: 90px;
+        width: 140%;
+    }
+    .main__page__text h1{
+        margin-left: 5px;
+    }
+    .main__page__text p::before{
+        display: none;
+    }
+    .order__btn{
+        margin-top: 10px;
+        font-size: 16px;
+        margin: 0;
+        padding: 10px 50px 10px 10px;
+    }
+    .order__btn a::after{
+        left: 160px;
+        bottom: 10px;
+    }
+    .price__item__value{
+        font-size: 28px;
+    }
+    .footer__info a{
+        font-size: 20px;
+    }
+}   
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .main__page{
+        min-height: 100vh;
+    }
+    .main__page__inner{
+        text-align: center;
+    }
+    .main__page__text h1{
+        margin-left: 5px;
+        font-size: 28px;
+    }
+    .main__page__text p::before{
+        display: none;
+    }
+    .main__page__image{
+        display: none;
+    }
+    .main__page__text{
+        margin-top: 70px;
+    }
+    .main__page__text p{
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .order__btn{
+        position: relative;
+        margin-top: 40px;
+    }
+    .order__btn a:hover::after {
+        left: 175px;
+    }
+    /* Features */
+    .features__item {
+        width: 100%;
+    }
+    .features__title {
+        font-size: 22px;
+    }
+    .features__text p{
+        font-size: 16px;
+    }
+
+    /* Process */
+    .process_corusele {
+        width: 100%;
+    }
+    .process_description {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .process__inner .slick-dots {
+        top: 310px;
+        right: 90px;
+    }
+    .precess__items__header h2{
+        font-size: 22px;
+    }
+    .process__items__text p{
+        font-size: 16px;
+    }
+
+    /* Benefits */
+    .benefits__item{
+        width: 100%;
+        padding: 0 0 25px 0;
+    }
+    .benefits__item__title h3{
+        font-size: 22px;
+    }
+    .benefits__item__text{
+        font-size: 16px;
+    }
+
+
+    /* Galery */
+    .galery__foto{
+        height: 220px;
+       }
+       .galery__foto img {
+           right: 0px;
+           width: 100%;
+       }
+       .slick-dots {
+           width: 100%;
+           bottom: -50px;
+           right: 0px;
+       }
+
+       /* Testimonials */
+       .testimonials__item {
+           width: 100%;
+       }
+       .testimonials__foto img {
+           margin-top: 15px;
+       }
+
+       /* Price */
+       .price__item {
+           width: 100%;
+           margin-bottom: 50px;
+       }
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+
+}
+
+
+
+
+
+
+
+
+
+
